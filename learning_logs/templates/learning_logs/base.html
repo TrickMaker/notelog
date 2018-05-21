@@ -20,18 +20,19 @@
             <button type="button" class="navbar-toggle collapsed"
                     data-toggle="collapse" data-target="#navbar"
                     aria-expanded="false" aria-controls="navbar"></button>
-            <a class="navbar-brand" href="{% url 'learning_logs:index' %}"> Learning Log</a>
+            <a class="navbar-brand" href="{% url 'learning_logs:index' %}"> 看，是光</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{% url 'learning_logs:topics' %}">Topics</a></li>
+                <li><a href="{% url 'learning_logs:topics' %}">时刻</a></li>
+                 <li><a target="_blank" href="https://github.com/TrickMaker/notelog"><i class="uk-icon-code"></i>源码</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right"> {% if user.is_authenticated %}
                 <li><a>Hello, {{ user.username }}.</a></li>
-                <li><a href="{% url 'users:logout' %}">log out</a></li>
+                <li><a href="{% url 'users:logout' %}">登出</a></li>
                 {% else %}
                 <li><a href="{% url 'users:register' %}">register</a></li>
-                <li><a href="{% url 'users:login' %}">log in</a></li>
+                <li><a href="{% url 'users:login' %}">登入</a></li>
                 {% endif %}
             </ul>
         </div><!--/.nav-collapse -->

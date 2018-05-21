@@ -1,13 +1,14 @@
 {% extends "learning_logs/base.html" %}
 {% block header %}
 
-<div class='jumbotron'><h1>Track your learning.</h1>
+<div class='jumbotron'><h1>记录你灵感闪现的时刻.</h1>
 </div>
 {% endblock header %}
 {% block content %} <h2>
-    <a href="{% url 'users:register' %}">Register an account</a> to make
-    your own Learning Log, and list the topics you're learning about. </h2>
+    <a href="{% url 'users:register' %}">注册一个账号</a> 来
+    记录你灵感闪现的时刻. </h2>
 <h2>
     Whenever you learn something new about a topic, make an entry summarizing what you've learned.
+    (如果你是用手机查看的此页面，可点击右上角的三条杠按钮来查看功能。Tip : 目前此网页内的所有主题都只对自己可见。)
 </h2>
 {% endblock content %}

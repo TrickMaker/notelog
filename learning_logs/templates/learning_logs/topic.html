@@ -3,14 +3,14 @@
 {% block header %} <h2>{{ topic }}</h2>
 {% endblock header %}
 {% block content %} <p>
-    <a href="{% url 'learning_logs:new_entry' topic.id %}">add new entry</a></p>
+    <a href="{% url 'learning_logs:new_entry' topic.id %}">添加一个新时刻</a></p>
 {% for entry in entries %}
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3>
             {{ entry.date_added|date:'M d, Y H:i' }}
             <small>
-                <a href="{% url 'learning_logs:edit_entry' entry.id %}"> edit entry</a>
+                <a href="{% url 'learning_logs:edit_entry' entry.id %}"> 编辑 条目 </a>
             </small>
         </h3>
     </div>
